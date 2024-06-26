@@ -1,0 +1,118 @@
+import GeneratorCrud from "../components/GeneratorCrud";
+
+const Customer = () => {
+  const field = [
+    {
+      name: "user",
+      required: false,
+      type_form: "select",
+      type_input: "text",
+      max_length: 0,
+      min_length: 0,
+      api: "https://randomuser.me/api/?results=5",
+      options: [],
+    },
+    {
+      name: "id",
+      required: true,
+      type_form: "input",
+      type_input: "number",
+      max_length: 5,
+      min_length: 1,
+      api: "",
+      primary_key: true,
+      searchable: true,
+    },
+    {
+      name: "name",
+      required: true,
+      type_form: "input",
+      type_input: "text",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+      primary_key: true,
+      searchable: true,
+    },
+    {
+      name: "price",
+      required: true,
+      type_form: "input",
+      type_input: "number",
+      max_length: null,
+      min_length: null,
+      api: "",
+    },
+    {
+      name: "date",
+      required: true,
+      type_form: "date",
+      type_input: "date",
+      max_length: null,
+      min_length: null,
+      api: "",
+    },
+    {
+      name: "description",
+      required: true,
+      type_form: "textarea",
+      type_input: "textarea",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+    },
+    {
+      name: "description1",
+      required: true,
+      type_form: "textarea",
+      type_input: "textarea",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+    },
+    {
+      name: "description2",
+      required: true,
+      type_form: "textarea",
+      type_input: "textarea",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+    },
+    {
+      name: "description3",
+      required: true,
+      type_form: "textarea",
+      type_input: "textarea",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+    },
+    {
+      name: "description4",
+      required: true,
+      type_form: "textarea",
+      type_input: "textarea",
+      max_length: 100,
+      min_length: 1,
+      api: "",
+    },
+    {
+      name: "category",
+      required: false,
+      type_form: "select",
+      type_input: "text",
+      max_length: 0,
+      min_length: 0,
+      api: "",
+
+      options: [
+        { value: "makanan", label: "Makanan" },
+        { value: "minuman", label: "Minuman" },
+      ],
+    },
+  ];
+
+  return <GeneratorCrud field={field} />;
+};
+export default Customer;
